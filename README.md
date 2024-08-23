@@ -24,7 +24,7 @@ git clone https://github.com/pranavvb03/Karbon-SDE-Internship-Hackathon.git
    
 Ensure streamlit is installed
 
-4. Run the streamlit app
+3. Run the streamlit app
 
 Run the command given below in the terminal
 
@@ -42,9 +42,13 @@ The expected results are to displayed in JSON format, having following fields:-
 where each flag belongs to a single class given by color codes as follows,
 
 GREEN = 1
+
 AMBER = 2
+
 RED = 0
+
 MEDIUM_RISK = 3 
+
 WHITE = 4 
         
 Link to streamlit application - https://karbon-sde-internship-hackathon-eurss5ktpzxa9wzpivswmp.streamlit.app/

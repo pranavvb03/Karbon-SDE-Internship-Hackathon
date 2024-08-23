@@ -142,7 +142,6 @@ def iscr(data: dict, financial_index):
         depreciation = pnl.get("depreciation", 0.0)
         interest_expense = pnl.get("interest", 0.0)
         
-        # Calculate ISCR with the formula: (EBIT + Depreciation + 1) / (Interest Expense + 1)
         iscr_value = (float(profit_before_interest_and_tax ) + float(depreciation) + 1) / (float(interest_expense) + 1)
         return iscr_value
     except (IndexError, KeyError, TypeError):

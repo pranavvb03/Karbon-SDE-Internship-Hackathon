@@ -9,13 +9,12 @@ def upload_data():
     uploaded_file = st.file_uploader("Choose a JSON file", type="json")
     
     if uploaded_file is not None:
-        # Load JSON data
-        data = json.load(uploaded_file)
-        
-        # Save the uploaded data in session state
-        st.session_state['financial_data'] = data
-        
-        st.success("File uploaded successfully!")
+        if st.button("Submit"):
+            data = json.load(uploaded_file)
+            st.session_state['financial_data'] = data
+            st.success("File uploaded successfully!")
+        else:
+            st.warning("Please click the Submit button after uploading.")
 
 # Page 2: Display Results
 def display_results():

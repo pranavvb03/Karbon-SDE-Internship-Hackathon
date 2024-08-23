@@ -9,12 +9,30 @@ The web application has been built using Streamlit, an open-source framework to 
 3. data.json -> data file used in rules.
 
 The streamlit app consists of two pages or sections :-
+
 Page 1 - On this page, upload the data file data.json and click on submit.
+
 Page 2 - On this page, view results got from model.py
 
+## Installation
+
+1.Clone the Repo
+
+git clone https://github.com/pranavvb03/Karbon-SDE-Internship-Hackathon.git
+
+2. Install requirements.txt
+   
+Ensure streamlit is installed
+
+4. Run the streamlit app
+
+Run the command given below in the terminal
+
+streamlit run app.py
 
 ## Results
 The expected results are to displayed in JSON format, having following fields:-
+
 "flags": {
             "TOTAL_REVENUE_5CR_FLAG": total_revenue_5cr_flag_value,
             "BORROWING_TO_REVENUE_FLAG": borrowing_to_revenue_flag_value,
@@ -22,6 +40,7 @@ The expected results are to displayed in JSON format, having following fields:-
         }
         
 where each flag belongs to a single class given by color codes as follows,
+
 GREEN = 1
 AMBER = 2
 RED = 0
